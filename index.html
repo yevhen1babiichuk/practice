@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Firts Page</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+	<header class="header">
+		<div class="container">
+			<h1>Якір</h1>
+			<h2>
+				<small>Магазин кафе</small>
+			</h2>
+		</div>
+	</header>
+	<nav class="page-navigation">
+		<div class="container">
+			<ul>
+				<li><a href="#">Головна</a></li>
+				<li><a href="#info">Про нас</a></li>
+				<li><a href="#" id="contact-button">Контакти</a></li>
+			</ul>
+		</div>
+	</nav>
+	<main>
+		<div class="container">
+			<h2 class="collection-title">Наш інтер'єр <small>Візуалізуйте якість</small></h2>
+			<div class="collections" id="info">
+				<div class="collection-item-outer">
+					<div class="collection-item">
+						<img src="images/cafe.webp" alt="List picture" width="" height="">
+						<div class="collection-text">
+							<h3>"Якір"</h3>
+							<p>це не просто кафе, а місце, яким по-справжньому пишаються кияни, 
+								а також кожен гість столиці буде в захваті від нього. Адже це справжнісінька пам'ятка 
+								на гастрономічній карті міста.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="collection-item-outer">
+					<div class="collection-item">
+						<img src="images/atreb.webp" alt="List picture" width="" height="">
+						<div class="collection-text">
+							<h3>Колорит</h3>
+							<p>Це те місце, де панує національний колорит, де зібрані унікальні 
+								страви з абсолютно з усіх регіонів України.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="collection-item-outer">
+					<div class="collection-item">
+						<img src="images/food.webp" alt="List picture" width="" height="">
+						<div class="collection-text">
+							<h3>Меню</h3>
+							<p>Меню дуже багате смачними та унікальними стравами. 
+								Особливе місце займають м'ясні позиції.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<h2 class="collection-title">Колекція відео <small>Візуалізуйте якість</small></h2>
+			<div class="collections">
+				<div class="collection-item-outer">
+					<div class="collection-item">
+						<video controls>
+							<source src="video/video1.mp4" type="video/mp4">
+						</video>
+						<div class="collection-text">
+							<h3>Більше не жарю рибу!</h3>
+							<p>Цей рецепт риби нам дуже сподобалася. Хек виходить ніжним, соковитим, 
+								ароматним та дуже смачним. Така рибка сподобається навіть дітям.
+							</p>
+							<a href="https://www.youtube.com/watch?v=AJ_tlSPEE78">Читати більше...</a>
+						</div>
+					</div>
+				</div>
+				<div class="collection-item-outer">
+					<div class="collection-item">
+						<video controls>
+							<source src="video/video2.mp4" type="video/mp4">
+						</video>
+						<div class="collection-text">
+							<h3>Так капусту ще не готували!</h3>
+							<p>Проста та дуже смачна запіканка з капусти на сковороді. 
+								Смачна страва з найпростіших і найдоступніших інгредієнтів.
+							</p>
+							<a href="https://www.youtube.com/watch?v=t7mCExsBnTA">Читати більше...</a>
+						</div>
+					</div>
+				</div>
+				<div class="collection-item-outer">
+					<div class="collection-item">
+						<video controls>
+							<source src="video/video3.mp4" type="video/mp4">
+						</video>
+						<div class="collection-text">
+							<h3>Супе ідея з лаваша!</h3>
+							<p>Дуже просто, швидко та смачно! Ідея для сніданку або перекушування з лаваша.
+							</p>
+							<a href="https://www.youtube.com/watch?v=CfyDRCUOLKw">Читати більше...</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h2 class="collection-title map">Наше місцезнаходження</h2>
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10585.697912389658!2d22.7255351!3d48.4483846!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4739ab8839df533f%3A0xa9c6927d28bdb226!2z0K_QutGW0YA!5e0!3m2!1suk!2sua!4v1717245356720!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<p>Copyright © Example.com 2024</p>
+		</div>
+	</footer>
+
+	<div id="contact-modal" class="modal">
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<h2>Контактна інформація</h2>
+			<p>Телефон: +380 123 456 789</p>
+			<p>Email: info@cafe.bar.yakirm</p>
+			<p>Адреса: вулиця Івана Парканія, 56, Мукачево, Закарпатська область</p>
+		</div>
+	</div>
+	<script>
+		var modal = document.getElementById('contact-modal');
+		var btn = document.getElementById('contact-button');
+		var span = document.getElementsByClassName('close')[0];
+		btn.onclick = function() {
+			modal.style.display = 'block';
+		}
+
+		span.onclick = function() {
+			modal.style.display = 'none';
+		}
+
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = 'none';
+			}
+		}
+	</script>
+	</body>
+</html>
